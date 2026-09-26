@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Résumé — Patrick Cowhill</title>
-  <meta name="description" content="Résumé for Patrick Cowhill, software engineer.">
-  <meta name="robots" content="noindex">
+  <meta name="description" content="Résumé for Patrick Cowhill, software engineer: experience at Roster5 and L3Harris Technologies, education at Georgia Tech and the University of Florida, patents, and core competencies.">
   <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Résumé — Patrick Cowhill">
+  <meta property="og:description" content="Software engineer with a Master's in Electrical and Computer Engineering and a background in physics and mathematics.">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script src="../assets/js/theme.js"></script>
@@ -21,32 +23,180 @@
       </a>
       <nav class="site-nav" aria-label="Primary">
         <ul class="nav-menu">
+          <li><a href="../#experience">Experience</a></li>
           <li><a href="../#work">Work</a></li>
           <li><a href="../#more">More</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" title="Toggle color theme">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M12 2.5v2.5M12 19v2.5M2.5 12h2.5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/>
+          </g>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
-    <section class="section" aria-labelledby="resume-title">
-      <div class="container">
-        <header class="section__header">
-          <p class="eyebrow">Résumé</p>
-          <h1 class="section__title" id="resume-title">Résumé coming soon</h1>
-          <p class="section__note">A public version of my résumé (with personal contact details removed) will be published here. In the meantime, the <a href="../#experience">Professional Experience</a> and <a href="../#foundation">Technical Foundation</a> sections of the portfolio cover the same ground.</p>
+    <article class="section resume" aria-labelledby="resume-title">
+      <div class="container resume__container">
+
+        <header class="resume__header">
+          <div>
+            <p class="eyebrow">Résumé</p>
+            <h1 class="resume__name" id="resume-title">Patrick Cowhill</h1>
+            <p class="resume__contact">Melbourne, FL · <a href="https://www.linkedin.com/in/PatrickCowhill">LinkedIn.com/in/PatrickCowhill</a> · <a href="../">PatrickCowhill.com</a> · <a href="https://cowhill.dev">Cowhill.dev</a></p>
+          </div>
+          <a class="button button--primary" href="../assets/docs/Patrick-Cowhill-Resume.pdf" download="Patrick-Cowhill-Resume.pdf">Download PDF<span class="button__arrow" aria-hidden="true">↓</span></a>
         </header>
-        <!-- TODO: replace this page with a link to (or embed of) the sanitized résumé PDF,
-             e.g. site/assets/docs/patrick-cowhill-resume.pdf -->
-        <a class="button button--secondary" href="../">Back to portfolio</a>
+
+        <p class="resume__summary">TS/SCI-cleared Software Engineer and Technical Specialist with a Master’s in Electrical and Computer Engineering (4.0 GPA) and a Bachelor’s in Physics and Mathematics. Proven record of delivering mission-critical EO/SAR software and leading teams of up to 20 from research and concept to deployment. Skilled in image and signal processing and geospatial systems with experience in containerized releases, GPU acceleration, and cloud/on-prem integration.</p>
+
+        <!-- ================= RELEVANT EXPERIENCE ================= -->
+        <section class="resume__section" aria-labelledby="resume-experience">
+          <h2 class="resume__heading" id="resume-experience">Relevant Experience</h2>
+
+          <!-- Roster5: added after the attached PDF was written; the PDF does not include it. -->
+          <div class="resume__entry">
+            <div class="resume__entry-head">
+              <h3 class="resume__org">Roster5</h3>
+            </div>
+            <div class="resume__roles">
+              <div class="resume__role"><span>Software Engineer</span><span class="resume__dates">April 2026 - Present</span></div>
+            </div>
+            <ul class="resume__bullets">
+              <li>Develop and ship production software in Java, Spring Boot, and TypeScript with automated testing in Cypress, deployed on AWS and Kubernetes with DynamoDB and MongoDB.</li>
+              <li>Deliver hands-on, ticket-driven engineering work across company programs while coming up to speed on their systems and technologies.</li>
+              <li>Use AI-assisted development as part of the day-to-day engineering workflow.</li>
+              <li>Delivered approximately four internal presentations on practical AI-assisted software development, including project demonstrations, usage guidance, and engineering workflow examples.</li>
+              <li>Consult with the company president and vice president on AI adoption, responsible AI use, and opportunities to incorporate AI into upcoming contract work.</li>
+              <li>Presented to program customers on how the company is using AI in software development.</li>
+              <li>Own and administer the company’s Claude Team subscription.</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-head">
+              <h3 class="resume__org">L3Harris Technologies</h3>
+              <span class="resume__place">Melbourne, FL</span>
+            </div>
+            <div class="resume__roles">
+              <div class="resume__role"><span>Specialist (L3) Software Engineer</span><span class="resume__dates">March 2024 - April 2026</span></div>
+              <div class="resume__role"><span>Senior Associate (L2) Software Engineer</span><span class="resume__dates">June 2022 - February 2024</span></div>
+              <div class="resume__role"><span>Associate (L1) Software Engineer</span><span class="resume__dates">January 2020 - May 2022</span></div>
+            </div>
+            <ul class="resume__bullets">
+              <li>Lead a 20-member engineering team as product owner for three deployed solutions.</li>
+              <li>Drive $4M in annual program revenue by leading technical demos, facilitating customer engagements, and authoring proposal volumes for innovative geospatial technologies.</li>
+              <li>Direct development of EO and SAR software in C++, Python, and MATLAB for Linux.</li>
+              <li>Integrate GPU acceleration to boost performance of image processing workflows.</li>
+              <li>Containerize, test, and integrate codebases for GovCloud and on-prem deployment.</li>
+              <li>Collaborate with end users to define requirements and guide feature growth.</li>
+              <li>Oversee debugging, code reviews, configuration management, and stakeholder demos.</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-head">
+              <h3 class="resume__org">University of Florida Physics Department</h3>
+              <span class="resume__place">Gainesville, FL</span>
+            </div>
+            <div class="resume__roles">
+              <div class="resume__role"><span>Undergraduate Research Assistant and Guest Lecturer</span><span class="resume__dates">January 2018 - December 2019</span></div>
+            </div>
+            <ul class="resume__bullets">
+              <li>Modeled experimental data and ran biochemical system simulations in MATLAB.</li>
+              <li>Designed and carried out Vibrio fischeri experiments for bioluminescence investigations.</li>
+              <li>Operated lab machinery and authored protocols supporting peer-reviewed publication.</li>
+              <li>Collaborated with Principal Investigator and graduate students on biophysics research.</li>
+              <li>Instructed 4000-level Mechanics II, applying Mathematica to complex physics concepts.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+        <section class="resume__section" aria-labelledby="resume-education">
+          <h2 class="resume__heading" id="resume-education">Education</h2>
+
+          <div class="resume__entry">
+            <div class="resume__entry-head">
+              <h3 class="resume__org">Georgia Institute of Technology</h3>
+              <span class="resume__place">Atlanta, GA</span>
+            </div>
+            <div class="resume__roles">
+              <div class="resume__role"><span>Master of Science in Electrical and Computer Engineering</span><span class="resume__dates">August 2021 - May 2024</span></div>
+            </div>
+            <p class="resume__gpa">GPA: 4.00</p>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-head">
+              <h3 class="resume__org">University of Florida</h3>
+              <span class="resume__place">Gainesville, FL</span>
+            </div>
+            <div class="resume__roles">
+              <div class="resume__role"><span>Bachelor of Science with Majors in Physics and Mathematics</span><span class="resume__dates">August 2016 - December 2019</span></div>
+            </div>
+            <p class="resume__gpa">GPA: 3.95</p>
+          </div>
+        </section>
+
+        <!-- ================= PATENTS ================= -->
+        <section class="resume__section" aria-labelledby="resume-patents">
+          <h2 class="resume__heading" id="resume-patents">Patents</h2>
+
+          <div class="resume__entry">
+            <div class="resume__roles">
+              <div class="resume__role"><span>U.S. Patent No. 11,636,649 B2 – Inventor</span><span class="resume__dates">Issued April 2023</span></div>
+            </div>
+            <ul class="resume__bullets">
+              <li>Geospatial System for 3D Model Updates Based Upon Predictively Registered Image</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__roles">
+              <div class="resume__role"><span>U.S. Patent No. 11,816,793 B2 – Inventor</span><span class="resume__dates">Issued November 2023</span></div>
+            </div>
+            <ul class="resume__bullets">
+              <li>System for 3D Geospatial Model Updates via Iterative Predictive Image Registration</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ================= CORE COMPETENCIES ================= -->
+        <section class="resume__section" aria-labelledby="resume-competencies">
+          <h2 class="resume__heading" id="resume-competencies">Core Competencies</h2>
+          <dl class="resume__competencies">
+            <div><dt>Programming &amp; Scripting</dt><dd>C/C++, Python, Matlab, Bash, JavaScript/HTML/CSS, Java, PowerShell</dd></div>
+            <div><dt>Frameworks &amp; Libraries</dt><dd>Numpy, SciPy, YAML, CV2, OpenGL, Qt, SFML, CUDA, REST API, VMs</dd></div>
+            <div><dt>DevOps &amp; CI/CD</dt><dd>Docker/Podman, Jenkins, AWS, Artifactory/Nexus, SonarQube, Fortify SCA</dd></div>
+            <div><dt>Operating Systems</dt><dd>Red Hat Enterprise Linux 7/8, CentOS, Amazon Linux 2023, Windows 10/11</dd></div>
+            <div><dt>Collaboration &amp; Program</dt><dd>Agile, Scrum Master, Atlassian, Git (BitBucket, Github), Mentorship</dd></div>
+            <div><dt>Specialized Domains</dt><dd>Image &amp; Signal Processing, Photogrammetry, GEOINT, Data Analysis, DoD</dd></div>
+          </dl>
+        </section>
+
+        <footer class="resume__footer">
+          <a class="button button--secondary" href="../assets/docs/Patrick-Cowhill-Resume.pdf" download="Patrick-Cowhill-Resume.pdf">Download PDF</a>
+          <a class="button button--secondary" href="../">Back to portfolio</a>
+        </footer>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p>© 2026 Patrick Cowhill</p>
+      <p>© <span data-year>2026</span> Patrick Cowhill</p>
+      <p class="site-footer__meta"><a href="../">patrickcowhill.com</a></p>
     </div>
   </footer>
+
+  <script src="../assets/js/main.js" defer></script>
 </body>
 </html>

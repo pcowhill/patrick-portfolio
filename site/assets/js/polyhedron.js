@@ -12,6 +12,8 @@
  *   - pauses when off-screen or when the tab is hidden
  *   - caps device pixel ratio for low-power devices
  *   - re-reads CSS custom properties on theme change
+ *   - the ambient glow behind the solid is drawn by the hero's CSS background,
+ *     not on the canvas, so it is never clipped by the canvas edge
  */
 (function () {
   'use strict';
@@ -64,7 +66,6 @@
     palette.dark   = parseColor(cs.getPropertyValue('--poly-dark'))   || [44, 52, 61];
     palette.accent = parseColor(cs.getPropertyValue('--poly-accent')) || [46, 154, 99];
     palette.edge   = cs.getPropertyValue('--poly-edge').trim() || 'rgba(0,0,0,0.3)';
-    palette.glow   = cs.getPropertyValue('--poly-glow').trim() || 'rgba(31,122,77,0.15)';
   }
 
   function parseColor(str) {
@@ -156,13 +157,6 @@
     var camDist = 7.5;
 
     var ax = angleX + tiltX, ay = angleY + tiltY;
-
-    // Soft ground glow beneath the solid
-    var g = ctx.createRadialGradient(cx, cy + size * 0.05, size * 0.05, cx, cy + size * 0.05, size * 0.5);
-    g.addColorStop(0, palette.glow);
-    g.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, width, height);
 
     var rotated = verts.map(function (v) { return rotate(v, ax, ay); });
     var projected = rotated.map(function (v) {
