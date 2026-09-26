@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Cowhill — Software Engineer</title>
+  <meta name="description" content="Patrick Cowhill is a software engineer who turns difficult technical problems into working software, working across research, implementation, testing, integration, and deployment.">
+  <meta name="author" content="Patrick Cowhill">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f3f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161b22" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Patrick Cowhill — Software Engineer">
+  <meta property="og:description" content="Software engineer turning difficult technical problems into working software across the full engineering lifecycle.">
+  <meta property="og:site_name" content="Patrick Cowhill">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Patrick Cowhill — Software Engineer">
+  <meta name="twitter:description" content="Software engineer turning difficult technical problems into working software across the full engineering lifecycle.">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Applies a saved theme before first paint to avoid a flash of the wrong theme. -->
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Patrick Cowhill — home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Patrick Cowhill</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#foundation">Foundation</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#more">More</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" title="Toggle color theme">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M12 2.5v2.5M12 19v2.5M2.5 12h2.5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/>
+          </g>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         1. HERO
+         ============================================================ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title">Patrick Cowhill</h1>
+          <p class="hero__lead">Software Engineer turning difficult technical problems into working software.</p>
+          <p class="hero__sub">I work across the engineering lifecycle from research and requirements to implementation, testing, integration, deployment, and iteration.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#work">View My Work</a>
+            <a class="button button--secondary" href="resume/">Résumé</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <canvas class="polyhedron" id="polyhedron" data-polyhedron></canvas>
+          <noscript><img class="polyhedron-fallback" src="assets/img/rhombic-dodecahedron.svg" alt=""></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. WHAT I BRING
+         ============================================================ -->
+    <section class="section section--bring" id="bring" aria-labelledby="bring-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">What I Bring</p>
+          <h2 class="section__title" id="bring-title">Engineering across the whole problem, not just one layer of it.</h2>
+        </header>
+
+        <div class="bring-grid">
+          <article class="bring-item">
+            <span class="bring-item__index" aria-hidden="true">01</span>
+            <h3 class="bring-item__title">Build Difficult Software</h3>
+            <p>Hands-on implementation across Java, C++, Python, web systems, cloud infrastructure, testing, integration, and deployment.</p>
+          </article>
+          <article class="bring-item">
+            <span class="bring-item__index" aria-hidden="true">02</span>
+            <h3 class="bring-item__title">Understand the Problem Deeply</h3>
+            <p>A foundation in mathematics, physics, electrical/computer engineering, modeling, signal processing, and research.</p>
+          </article>
+          <article class="bring-item">
+            <span class="bring-item__index" aria-hidden="true">03</span>
+            <h3 class="bring-item__title">Take Software to Real Users</h3>
+            <p>Requirements, customer interaction, demos, deployment, feedback, debugging, and iteration.</p>
+          </article>
+          <article class="bring-item">
+            <span class="bring-item__index" aria-hidden="true">04</span>
+            <h3 class="bring-item__title">Make Teams More Effective</h3>
+            <p>Technical leadership, mentoring, teaching, code review, presentations, and coordinating work without stepping away from engineering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. PROFESSIONAL EXPERIENCE
+         ============================================================ -->
+    <section class="section section--experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__header section__header--wide">
+          <p class="eyebrow">Professional Experience</p>
+          <h2 class="section__title" id="experience-title">Two engineering roles, growing scope, and software that had to work.</h2>
+          <p class="section__note">Much of my professional work has been performed on government and defense programs and cannot be shared publicly.</p>
+        </header>
+
+        <!-- Roster5 -->
+        <article class="story" id="roster5">
+          <div class="story__aside">
+            <p class="story__org">Roster5</p>
+            <p class="story__dates">April 2026 – Present</p>
+            <p class="story__role">Software Engineer</p>
+            <ul class="story__stack" aria-label="Technologies in current use">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>TypeScript</li>
+              <li>Cypress</li>
+              <li>AWS</li>
+              <li>Kubernetes</li>
+              <li>DynamoDB</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="story__body">
+            <h3 class="story__title">Hands-on engineering on production programs</h3>
+            <p>I joined Roster5 in April 2026 as a hands-on software engineer. Day to day, I am writing and shipping code on the company's programs: Java and Spring Boot services, TypeScript and modern web front ends, Cypress and other automated tests, and deployments on AWS and Kubernetes backed by DynamoDB and MongoDB.</p>
+            <p>Most of that work so far has been what a new engineer on a mature program should be doing: picking up tickets, learning the systems and their history, fixing real problems, and getting changes tested and into production while coming up to speed on the team's technologies.</p>
+
+            <h4 class="story__subtitle">AI as part of everyday engineering</h4>
+            <p>AI-assisted development is part of my normal workflow, and I have become one of the internal technical voices helping Roster5 work out how to use it effectively and responsibly:</p>
+            <ul class="story__list">
+              <li>Delivered roughly four internal presentations to the Roster5 team on practical AI-assisted software development, including project demonstrations, usage guidance, and concrete examples of AI in engineering workflows.</li>
+              <li>Consulted directly with the company president and vice president on AI adoption, responsible use, and opportunities to incorporate AI into upcoming contract work.</li>
+              <li>Presented to customers on one of Roster5's programs about how the company is using AI in software development.</li>
+              <li>Own and administer Roster5's Claude Team subscription.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- L3Harris -->
+        <article class="story" id="l3harris">
+          <div class="story__aside">
+            <p class="story__org">L3Harris Technologies</p>
+            <p class="story__dates">January 2020 – April 2026</p>
+            <ol class="story__progression" aria-label="Role progression">
+              <li>Associate Software Engineer</li>
+              <li>Senior Associate Software Engineer</li>
+              <li>Specialist Software Engineer</li>
+            </ol>
+            <ul class="story__stack" aria-label="Primary technologies">
+              <li>C++</li>
+              <li>Python</li>
+              <li>MATLAB</li>
+              <li>Linux</li>
+              <li>GPU acceleration</li>
+              <li>Containers</li>
+              <li>GovCloud</li>
+            </ul>
+          </div>
+
+          <div class="story__body">
+            <h3 class="story__title">From image-processing algorithms to deployed geospatial systems</h3>
+            <p>Over six years at L3Harris I progressed from Associate to Specialist Software Engineer while staying on the implementation side of the work. I built electro-optical (EO) and synthetic aperture radar (SAR) software in C++, Python, and MATLAB on Linux, including GPU-accelerated image processing, signal processing, and geospatial systems.</p>
+            <p>The job ran the full lifecycle: turning customer requirements into designs, writing and reviewing code, debugging hard problems, packaging software in containers, integrating and testing it, managing configuration, and deploying to both GovCloud and on-premises environments. I regularly demonstrated working software to stakeholders and customers.</p>
+            <p>As the scope grew, so did the responsibility around the code. I led engineering efforts involving up to 20 people and served as product owner for three deployed solutions, while continuing to write software on those same systems. That combination of technical demos, customer engagements, and proposal work supported roughly $4M in annual program revenue.</p>
+
+            <div class="patents">
+              <h4 class="story__subtitle">Issued U.S. patents <span class="patents__note">(listed as inventor)</span></h4>
+              <ul class="patents__list">
+                <li>
+                  <span class="patents__number">U.S. Patent No. 11,636,649 B2</span>
+                  <span class="patents__title">Geospatial System for 3D Model Updates Based Upon Predictively Registered Image</span>
+                </li>
+                <li>
+                  <span class="patents__number">U.S. Patent No. 11,816,793 B2</span>
+                  <span class="patents__title">System for 3D Geospatial Model Updates via Iterative Predictive Image Registration</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. REPRESENTATIVE ENGINEERING WORK
+         ============================================================ -->
+    <section class="section section--work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__header section__header--wide">
+          <p class="eyebrow">Representative Engineering Work</p>
+          <h2 class="section__title" id="work-title">Selected public examples</h2>
+          <p class="section__note">These are selected public examples of my engineering work, chosen to demonstrate different technical skills and problem-solving approaches.</p>
+        </header>
+
+        <!-- Case Study 1 -->
+        <article class="case" id="case-tls">
+          <div class="case__visual">
+            <img src="assets/img/case-tls.svg" alt="Schematic of a scan pipeline: a queue of more than one million websites flows through parallel TLS probes into a results store and analysis stage." width="640" height="420" loading="lazy">
+          </div>
+          <div class="case__body">
+            <p class="case__kicker">Case Study · Georgia Tech</p>
+            <h3 class="case__title">Network Security Study: HTTPS/TLS Adoption at Scale</h3>
+            <p class="case__problem"><strong>Problem.</strong> How widely, and how well, is HTTPS/TLS actually deployed across the web, and what does the long tail of sites look like?</p>
+            <p>For a graduate network security project at Georgia Tech, I queried and analyzed more than one million websites. That meant building scripted, automated data collection that could run reliably at scale, storing and cleaning the results, analyzing adoption and configuration patterns, and then interpreting what the data did and did not say. The findings were written up and presented.</p>
+            <p class="case__demonstrates"><strong>What this demonstrates:</strong> technical research, automation at scale, network security, data analysis, and technical communication.</p>
+            <ul class="case__links">
+              <li><span class="link-placeholder" data-todo="Upload the paper PDF to site/assets/docs/ and replace this placeholder with a link">Paper <span class="link-placeholder__tag">asset pending</span></span></li>
+              <li><span class="link-placeholder" data-todo="Upload the presentation to site/assets/docs/ and replace this placeholder with a link">Presentation <span class="link-placeholder__tag">asset pending</span></span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Case Study 2 -->
+        <article class="case case--reverse" id="case-ttr">
+          <div class="case__visual">
+            <img src="assets/img/case-ttr.svg" alt="Abstract route map of cities connected by colored track segments, with several agents' claimed routes highlighted and a small results histogram." width="640" height="420" loading="lazy">
+          </div>
+          <div class="case__body">
+            <p class="case__kicker">Case Study · Modeling &amp; Simulation</p>
+            <h3 class="case__title">Ticket to Ride Simulation</h3>
+            <p class="case__problem"><strong>Problem.</strong> Which strategies actually win in a rules-heavy board game, and how do you find out without playing thousands of games by hand?</p>
+            <p>Working with a team in MATLAB, I helped translate the full rule set of Ticket to Ride into a faithful simulation: the board graph, card economy, route claiming, scoring, and end-game conditions. We then built artificial agents with distinct strategies, ran them against each other in repeated simulations, and analyzed the results to see which approaches held up and why. The project was as much about clear collaborative software design as it was about the algorithms.</p>
+            <p class="case__demonstrates"><strong>What this demonstrates:</strong> modeling, simulation, algorithm design, collaborative software development, and translating complex systems into software.</p>
+            <ul class="case__links">
+              <li><span class="link-placeholder" data-todo="Add the report or repository URL when available">Report / source <span class="link-placeholder__tag">link pending</span></span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Case Study 3 -->
+        <article class="case" id="case-ai-team">
+          <div class="case__visual">
+            <img src="assets/img/case-ai-team.svg" alt="Flow diagram of a GitHub-centered delivery loop: requirements to issues, implementation, pull request, independent review, automated tests and CI/CD, deployment, and feedback back into issues." width="640" height="420" loading="lazy">
+          </div>
+          <div class="case__body">
+            <p class="case__kicker">Case Study · Modern Engineering</p>
+            <h3 class="case__title">GitHub as the Operating Environment for an AI-Assisted Software Team</h3>
+            <p class="case__problem"><strong>Problem.</strong> Can the ordinary machinery of professional software delivery keep an AI-driven team honest, reviewable, and shippable?</p>
+            <p>In a recent experiment I used GitHub itself as the operating environment for an AI-driven software team. Requirements became issues; implementation happened on branches and landed through pull requests; every change went through independent review and automated testing; CI/CD built and deployed the result; and feedback from the deployed software fed back into new issues. The point was not to remove engineering discipline but to show that the same Git-based workflow, tests, and review gates that make human teams reliable make AI-assisted engineering reliable too.</p>
+            <p class="case__demonstrates"><strong>What this demonstrates:</strong> modern software delivery, AI-assisted engineering, Git-based workflows, automated testing, CI/CD, and iterative development.</p>
+            <ul class="case__links">
+              <li><span class="link-placeholder" data-todo="Add the public repository URL if/when it is made public">Repository <span class="link-placeholder__tag">link pending</span></span></li>
+              <li><span class="link-placeholder" data-todo="Add a write-up or demo link if one is published">Write-up <span class="link-placeholder__tag">link pending</span></span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. TECHNICAL FOUNDATION / EDUCATION
+         ============================================================ -->
+    <section class="section section--foundation" id="foundation" aria-labelledby="foundation-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Technical Foundation</p>
+          <h2 class="section__title" id="foundation-title">Engineering built on mathematics and physics.</h2>
+        </header>
+
+        <div class="foundation-grid">
+          <article class="edu">
+            <p class="edu__school">Georgia Institute of Technology</p>
+            <h3 class="edu__degree">M.S. in Electrical &amp; Computer Engineering</h3>
+            <p class="edu__meta">GPA 4.0</p>
+            <p>Completed while working full-time at L3Harris and taking on substantial professional engineering responsibility.</p>
+            <p class="edu__areas-label">Areas of study</p>
+            <ul class="edu__areas">
+              <li>Computer architecture</li>
+              <li>Signal processing</li>
+              <li>Adaptive filtering</li>
+              <li>Network security</li>
+              <li>Mathematics of machine learning</li>
+              <li>Modeling and simulation</li>
+              <li>Computer vision</li>
+              <li>Partial differential equations</li>
+              <li>Advanced programming</li>
+            </ul>
+          </article>
+
+          <article class="edu">
+            <p class="edu__school">University of Florida</p>
+            <h3 class="edu__degree">B.S., majors in Physics and Mathematics</h3>
+            <p class="edu__meta">GPA 3.95</p>
+            <p>The source of my analytical background, mathematical reasoning, modeling mindset, and scientific research experience.</p>
+            <ul class="edu__notes">
+              <li>Undergraduate biophysics research with MATLAB-based modeling.</li>
+              <li>Guest lectured in upper-level Mechanics II, using Mathematica to teach computational approaches to physics problems.</li>
+            </ul>
+          </article>
+
+          <aside class="domains" aria-labelledby="domains-title">
+            <h3 class="domains__title" id="domains-title">Technical Domains</h3>
+            <ul class="domains__list">
+              <li>Software Engineering &amp; Systems</li>
+              <li>Modeling &amp; Simulation</li>
+              <li>Image &amp; Signal Processing</li>
+              <li>Computer Vision / Geospatial Systems</li>
+              <li>Cloud &amp; Deployment</li>
+              <li>Applied Mathematics</li>
+              <li>AI-Assisted Software Development</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. HOW I WORK
+         ============================================================ -->
+    <section class="section section--approach" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">How I Work</p>
+          <h2 class="section__title" id="approach-title">Four habits that hold up on real programs.</h2>
+        </header>
+
+        <dl class="principles">
+          <div class="principle">
+            <dt>Own the problem, not just the ticket</dt>
+            <dd>Understand the need, constraints, users, and tradeoffs before converging on a solution.</dd>
+          </div>
+          <div class="principle">
+            <dt>Build, test, and iterate</dt>
+            <dd>Prefer working software, feedback loops, automated testing, and incremental improvement.</dd>
+          </div>
+          <div class="principle">
+            <dt>Communicate clearly</dt>
+            <dd>Explain technical decisions appropriately to engineers, customers, leadership, and other stakeholders.</dd>
+          </div>
+          <div class="principle">
+            <dt>Help the team improve</dt>
+            <dd>Share knowledge, mentor others, review work thoughtfully, teach new tools, and improve engineering practices without losing touch with implementation.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. EXPLORE MORE
+         ============================================================ -->
+    <section class="section section--more" id="more" aria-labelledby="more-title">
+      <div class="container">
+        <div class="more">
+          <div class="more__lab">
+            <p class="eyebrow">Explore More</p>
+            <h2 class="section__title" id="more-title">Want to see more of what I build?</h2>
+            <p class="more__lead">Explore my experiments, tools, games, prototypes, and personal projects at cowhill.dev.</p>
+            <p class="more__note">patrickcowhill.com is my professional portfolio. cowhill.dev is the broader project catalog and personal lab where the rest of the work lives.</p>
+            <a class="button button--primary button--large" href="https://cowhill.dev" rel="me">Visit cowhill.dev<span class="button__arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <ul class="more__links" aria-label="Professional links">
+            <li><a class="more__link" href="resume/">Résumé</a></li>
+            <li>
+              <span class="more__link more__link--pending" data-todo="Replace with Patrick's LinkedIn profile URL">LinkedIn <span class="link-placeholder__tag">URL pending</span></span>
+            </li>
+            <li><a class="more__link" href="https://github.com/pcowhill" rel="me">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span data-year>2026</span> Patrick Cowhill</p>
+      <p class="site-footer__meta">Built as a static site. <a href="https://github.com/pcowhill/patrick-portfolio">Source on GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/polyhedron.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

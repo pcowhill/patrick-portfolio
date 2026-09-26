@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#161b22"/>
+  <g stroke="#0f1418" stroke-width="2" stroke-linejoin="round" transform="translate(860 315) scale(3.6)">
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="#2a3440"/>
+    <polygon points="0,-60 52,-30 0,0 -52,-30" fill="#6f7f90"/>
+    <polygon points="-52,-30 0,0 0,60 -52,30" fill="#3a4652"/>
+    <polygon points="52,-30 0,0 0,60 52,30" fill="#3fae78"/>
+  </g>
+  <text x="90" y="290" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="72" font-weight="700" fill="#e6e9ed" letter-spacing="-2">Patrick Cowhill</text>
+  <text x="90" y="350" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="30" font-weight="500" fill="#3fae78">Software Engineer</text>
+  <text x="90" y="410" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="26" fill="#a3adb8">Turning difficult technical problems into working software.</text>
+</svg>

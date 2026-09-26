@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Rhombic dodecahedron">
+  <g stroke="rgba(20,24,28,0.35)" stroke-width="1.2" stroke-linejoin="round" transform="translate(200 200) scale(1.55)">
+    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" fill="#2c343d"/>
+    <polygon points="0,-90 78,-45 0,0 -78,-45" fill="#8a97a6"/>
+    <polygon points="-78,-45 0,0 0,90 -78,45" fill="#4a5664"/>
+    <polygon points="78,-45 0,0 0,90 78,45" fill="#2e9a63"/>
+    <polygon points="0,-90 39,-67 0,-45 -39,-67" fill="#a3aeba"/>
+    <polygon points="39,-22 78,0 39,22 0,0" fill="#3fae78"/>
+    <polygon points="-39,-22 0,0 -39,22 -78,0" fill="#5b6877"/>
+  </g>
+</svg>
