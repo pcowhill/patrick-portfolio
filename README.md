@@ -9,13 +9,13 @@ deployed to GitHub Pages by GitHub Actions on every push to `main`.
 ```
 site/                       Everything under here is what gets deployed
   index.html                Homepage (all copy lives here, in clearly commented sections)
-  resume/index.html         Placeholder page for the public résumé
+  resume/index.html         Full résumé as HTML, with a link to the PDF
   assets/css/styles.css     Design tokens (light + dark), layout, components
   assets/js/theme.js        Applies a saved theme before first paint
   assets/js/main.js         Theme toggle, mobile nav, current-section highlighting
   assets/js/polyhedron.js   Animated rhombic dodecahedron (2D canvas, no libraries)
-  assets/img/               SVG icon, social image, case-study diagrams
-  assets/docs/              Drop the sanitized résumé PDF and case-study documents here
+  assets/img/               SVG icon, social image, case-study diagrams, cowhill.dev logo
+  assets/docs/              Résumé PDF and the case-study papers / slide decks
   .nojekyll                 Tells Pages to serve files as-is
 .github/workflows/pages.yml GitHub Pages deployment workflow
 ```
@@ -27,9 +27,10 @@ comment (`1. HERO`, `2. WHAT I BRING`, ...). Colors, spacing, and typography are
 CSS custom properties at the top of `site/assets/css/styles.css`; the dark theme
 overrides the same tokens.
 
-Placeholders that still need real links or files are marked in the HTML with a
-`data-todo="..."` attribute and render with a small "pending" tag. Search for
-`data-todo` to find them all.
+The résumé page (`site/resume/index.html`) mirrors the PDF in
+`site/assets/docs/Patrick-Cowhill-Resume.pdf`; update both together. The two
+project videos are linked to their existing Dropbox locations rather than
+hosted here (16 MB and 55 MB).
 
 ## Running locally
 

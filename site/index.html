@@ -233,11 +233,12 @@
             <p class="case__kicker">Case Study · Georgia Tech</p>
             <h3 class="case__title">Network Security Study: HTTPS/TLS Adoption at Scale</h3>
             <p class="case__problem"><strong>Problem.</strong> How widely, and how well, is HTTPS/TLS actually deployed across the web, and what does the long tail of sites look like?</p>
-            <p>For a graduate network security project at Georgia Tech, I queried and analyzed more than one million websites. That meant building scripted, automated data collection that could run reliably at scale, storing and cleaning the results, analyzing adoption and configuration patterns, and then interpreting what the data did and did not say. The findings were written up and presented.</p>
+            <p>For a graduate network security project at Georgia Tech, I queried and analyzed more than one million websites to examine how HTTPS and SSL/TLS certificates are adopted and implemented by online services hosted in China. That meant building scripted, automated data collection that could run reliably at scale, storing and cleaning the results, analyzing adoption and configuration patterns, and then interpreting what the data did and did not say about the implications for both servers and clients. The findings were written up as a paper and presented.</p>
             <p class="case__demonstrates"><strong>What this demonstrates:</strong> technical research, automation at scale, network security, data analysis, and technical communication.</p>
             <ul class="case__links">
-              <li><span class="link-placeholder" data-todo="Upload the paper PDF to site/assets/docs/ and replace this placeholder with a link">Paper <span class="link-placeholder__tag">asset pending</span></span></li>
-              <li><span class="link-placeholder" data-todo="Upload the presentation to site/assets/docs/ and replace this placeholder with a link">Presentation <span class="link-placeholder__tag">asset pending</span></span></li>
+              <li><a href="assets/docs/network-security-paper.pdf">Paper <span class="case__link-meta">(PDF)</span></a></li>
+              <li><a href="assets/docs/network-security-slides.pdf">Slide deck <span class="case__link-meta">(PDF)</span></a></li>
+              <li><a href="https://www.dropbox.com/scl/fi/gh5kshxsn9vwmanr6prwe/Computer-Network-Security-Presentation.mp4?rlkey=svljikzi2llx85ibdmt9cbeao&amp;st=jjf09rpw&amp;raw=1">Video presentation <span class="case__link-meta">(Dropbox)</span></a></li>
             </ul>
           </div>
         </article>
@@ -251,10 +252,12 @@
             <p class="case__kicker">Case Study · Modeling &amp; Simulation</p>
             <h3 class="case__title">Ticket to Ride Simulation</h3>
             <p class="case__problem"><strong>Problem.</strong> Which strategies actually win in a rules-heavy board game, and how do you find out without playing thousands of games by hand?</p>
-            <p>Working with a team in MATLAB, I helped translate the full rule set of Ticket to Ride into a faithful simulation: the board graph, card economy, route claiming, scoring, and end-game conditions. We then built artificial agents with distinct strategies, ran them against each other in repeated simulations, and analyzed the results to see which approaches held up and why. The project was as much about clear collaborative software design as it was about the algorithms.</p>
+            <p>Working with a team in MATLAB, I helped translate the full rule set of Ticket to Ride into a faithful simulation: train pieces, cards, routes, turns, and scoring. We then programmed artificial agents with distinct decision-making processes, ran hundreds of simulated games in which they competed against one another, and analyzed the performance metrics to identify the most successful, reliable, and complementary strategies. The project was as much about clear collaborative software design as it was about the algorithms.</p>
             <p class="case__demonstrates"><strong>What this demonstrates:</strong> modeling, simulation, algorithm design, collaborative software development, and translating complex systems into software.</p>
             <ul class="case__links">
-              <li><span class="link-placeholder" data-todo="Add the report or repository URL when available">Report / source <span class="link-placeholder__tag">link pending</span></span></li>
+              <li><a href="assets/docs/ticket-to-ride-paper.pdf">Paper <span class="case__link-meta">(PDF)</span></a></li>
+              <li><a href="https://github.com/pcowhill/TTRSimulation">Source code <span class="case__link-meta">(GitHub)</span></a></li>
+              <li><a href="https://www.dropbox.com/scl/fi/n8hh3sfwfc5zvcqsjy7yb/Modeling-and-Simulation-Final-Presentation.mp4?rlkey=hqcyjsen9918lorakr3eckk8v&amp;st=6mmrt2ap&amp;raw=1">Video presentation <span class="case__link-meta">(Dropbox)</span></a></li>
             </ul>
           </div>
         </article>
@@ -268,11 +271,11 @@
             <p class="case__kicker">Case Study · Modern Engineering</p>
             <h3 class="case__title">GitHub as the Operating Environment for an AI-Assisted Software Team</h3>
             <p class="case__problem"><strong>Problem.</strong> Can the ordinary machinery of professional software delivery keep an AI-driven team honest, reviewable, and shippable?</p>
-            <p>In a recent experiment I used GitHub itself as the operating environment for an AI-driven software team. Requirements became issues; implementation happened on branches and landed through pull requests; every change went through independent review and automated testing; CI/CD built and deployed the result; and feedback from the deployed software fed back into new issues. The point was not to remove engineering discipline but to show that the same Git-based workflow, tests, and review gates that make human teams reliable make AI-assisted engineering reliable too.</p>
+            <p>In a recent experiment I used GitHub itself as the operating environment for an AI-driven software team. A succession of independent Claude Code sessions act as product manager, developer, reviewer, QA engineer, release engineer, and maintainer, each orienting itself entirely from the repository, its issues, pull requests, review comments, and CI results. Requirements arrive as issues from a human customer; implementation lands through pull requests; every change goes through independent review, automated unit and browser tests, and lint and type checks; CI/CD deploys the result; and feedback on the deployed product feeds back into new issues. The product that emerged is a browser-based video editor. The point was not to remove engineering discipline but to show that the same Git-based workflow, tests, and review gates that make human teams reliable make AI-assisted engineering reliable too.</p>
             <p class="case__demonstrates"><strong>What this demonstrates:</strong> modern software delivery, AI-assisted engineering, Git-based workflows, automated testing, CI/CD, and iterative development.</p>
             <ul class="case__links">
-              <li><span class="link-placeholder" data-todo="Add the public repository URL if/when it is made public">Repository <span class="link-placeholder__tag">link pending</span></span></li>
-              <li><span class="link-placeholder" data-todo="Add a write-up or demo link if one is published">Write-up <span class="link-placeholder__tag">link pending</span></span></li>
+              <li><a href="https://github.com/pcowhill/claude-agile-team-demo">Repository <span class="case__link-meta">(GitHub)</span></a></li>
+              <li><a href="https://pcowhill.github.io/claude-agile-team-demo/">Live demo</a></li>
             </ul>
           </div>
         </article>
@@ -372,21 +375,27 @@
          ============================================================ -->
     <section class="section section--more" id="more" aria-labelledby="more-title">
       <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Explore More</p>
+          <h2 class="section__title" id="more-title">Want to see more of what I build?</h2>
+        </header>
+
         <div class="more">
-          <div class="more__lab">
-            <p class="eyebrow">Explore More</p>
-            <h2 class="section__title" id="more-title">Want to see more of what I build?</h2>
-            <p class="more__lead">Explore my experiments, tools, games, prototypes, and personal projects at cowhill.dev.</p>
-            <p class="more__note">patrickcowhill.com is my professional portfolio. cowhill.dev is the broader project catalog and personal lab where the rest of the work lives.</p>
-            <a class="button button--primary button--large" href="https://cowhill.dev" rel="me">Visit cowhill.dev<span class="button__arrow" aria-hidden="true">→</span></a>
-          </div>
+          <a class="lab-card" href="https://cowhill.dev" rel="me">
+            <span class="lab-card__logo">
+              <img src="assets/img/cowhill-logo-stacked.svg" alt="cowhill.dev" width="420" height="200">
+            </span>
+            <span class="lab-card__body">
+              <span class="lab-card__lead">Explore my experiments, tools, games, prototypes, and personal projects at cowhill.dev.</span>
+              <span class="lab-card__note">patrickcowhill.com is my professional portfolio. cowhill.dev is the broader project catalog and personal lab where the rest of the work lives.</span>
+              <span class="lab-card__cta">Visit cowhill.dev <span class="button__arrow" aria-hidden="true">→</span></span>
+            </span>
+          </a>
 
           <ul class="more__links" aria-label="Professional links">
-            <li><a class="more__link" href="resume/">Résumé</a></li>
-            <li>
-              <span class="more__link more__link--pending" data-todo="Replace with Patrick's LinkedIn profile URL">LinkedIn <span class="link-placeholder__tag">URL pending</span></span>
-            </li>
-            <li><a class="more__link" href="https://github.com/pcowhill" rel="me">GitHub</a></li>
+            <li><a class="more__link" href="resume/">Résumé<span class="more__link-meta">Full résumé and PDF download</span></a></li>
+            <li><a class="more__link" href="https://www.linkedin.com/in/PatrickCowhill" rel="me">LinkedIn<span class="more__link-meta">linkedin.com/in/PatrickCowhill</span></a></li>
+            <li><a class="more__link" href="https://github.com/pcowhill" rel="me">GitHub<span class="more__link-meta">github.com/pcowhill</span></a></li>
           </ul>
         </div>
       </div>

@@ -670,23 +670,8 @@ button {
   font-size: 0.95rem;
 }
 
-.link-placeholder,
-.more__link--pending {
-  color: var(--text-faint);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-.link-placeholder__tag {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-  border: 1px dashed var(--border-strong);
-  border-radius: 4px;
-  padding: 0.05rem 0.35rem;
-}
+.case__link-meta { color: var(--text-faint); font-weight: 400; font-size: 0.85em; }
+
 
 /* --------------------------------------------------------------------------
    6d. Technical foundation
@@ -790,28 +775,69 @@ button {
    -------------------------------------------------------------------------- */
 .more {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+/* cowhill.dev brand tile. The logo is charcoal/sage/sand on a transparent
+   background, so it sits on a fixed warm-stone surface in both themes. */
+.lab-card {
+  --lab-bg: #f3efe7;
+  --lab-bg-hover: #efe9de;
+  --lab-text: #142324;
+  --lab-muted: #4b5a5b;
+  --lab-accent: #618064;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.25rem, 3vw, 2.25rem);
   align-items: center;
-  padding: clamp(2rem, 4vw, 3rem);
-  background: var(--surface);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--lab-bg);
+  color: var(--lab-text);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
 }
-.more__lead { font-size: 1.15rem; color: var(--text); max-width: 34em; }
-.more__note { color: var(--text-muted); font-size: 0.98rem; max-width: 40em; margin-bottom: 1.5rem; }
+.lab-card:hover {
+  background: var(--lab-bg-hover);
+  border-color: var(--lab-accent);
+  box-shadow: var(--shadow-md);
+  color: var(--lab-text);
+}
+.lab-card:focus-visible { outline-offset: 4px; }
+
+.lab-card__logo { display: block; }
+.lab-card__logo img { width: 100%; height: auto; max-width: 300px; margin-inline: auto; }
+
+.lab-card__body { display: grid; gap: 0.6rem; }
+.lab-card__lead { font-size: 1.12rem; font-weight: 600; line-height: 1.4; letter-spacing: -0.01em; text-wrap: balance; }
+.lab-card__note { font-size: 0.95rem; color: var(--lab-muted); line-height: 1.55; }
+.lab-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  font-weight: 650;
+  color: var(--lab-accent);
+}
+.lab-card:hover .button__arrow { transform: translateX(3px); }
 
 .more__links {
   list-style: none;
   display: grid;
-  gap: 0;
+  align-content: center;
   border-top: 1px solid var(--border-strong);
 }
 .more__links li { border-bottom: 1px solid var(--border-strong); }
 .more__link {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 1rem;
   padding: 1rem 0.25rem;
   color: var(--text);
   text-decoration: none;
@@ -819,14 +845,111 @@ button {
   font-size: 1.05rem;
   transition: color var(--dur) var(--ease), padding-left var(--dur) var(--ease);
 }
+.more__link-meta {
+  grid-column: 1;
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-faint);
+  margin-top: 0.15rem;
+}
 a.more__link::after {
   content: "→";
+  grid-column: 2;
+  grid-row: 1 / span 2;
   color: var(--text-faint);
   transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 a.more__link:hover { color: var(--accent); padding-left: 0.6rem; }
 a.more__link:hover::after { transform: translateX(3px); color: var(--accent); }
-.more__link--pending { color: var(--text-faint); font-weight: 500; justify-content: flex-start; gap: 0.6rem; }
+
+/* --------------------------------------------------------------------------
+   6g. Résumé page
+   -------------------------------------------------------------------------- */
+.resume { border-top: 0; }
+.resume__container { max-width: 56rem; }
+
+.resume__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 1.5rem;
+}
+.resume__name { font-size: clamp(2rem, 1.4rem + 2vw, 2.8rem); letter-spacing: -0.03em; margin-bottom: 0.4rem; }
+.resume__contact { color: var(--text-muted); font-size: 0.98rem; margin: 0; }
+.resume__contact a { color: var(--text-muted); }
+.resume__contact a:hover { color: var(--accent); }
+
+.resume__summary { font-size: 1.08rem; line-height: 1.6; max-width: 66ch; margin-bottom: 2.25rem; }
+
+.resume__section { margin-bottom: 2.5rem; }
+.resume__heading {
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-strong);
+  margin-bottom: 1.25rem;
+}
+
+.resume__entry { margin-bottom: 1.75rem; }
+.resume__entry:last-child { margin-bottom: 0; }
+.resume__entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.35rem;
+}
+.resume__org { font-size: 1.15rem; }
+.resume__place { color: var(--text-faint); font-size: 0.92rem; }
+
+.resume__roles { display: grid; gap: 0.15rem; margin-bottom: 0.6rem; }
+.resume__role {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.15rem 1rem;
+  font-weight: 500;
+}
+.resume__dates { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-faint); font-weight: 400; white-space: nowrap; }
+.resume__gpa { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+.resume__bullets { list-style: none; display: grid; gap: 0.35rem; }
+.resume__bullets li { position: relative; padding-left: 1.15rem; color: var(--text); }
+.resume__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.68em;
+  width: 6px; height: 6px;
+  background: var(--accent);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.resume__competencies { margin: 0; display: grid; gap: 0.6rem; }
+.resume__competencies > div {
+  display: grid;
+  grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+  gap: 0.25rem 1.25rem;
+  align-items: baseline;
+}
+.resume__competencies dt { font-weight: 600; }
+.resume__competencies dd { margin: 0; color: var(--text-muted); }
+
+.resume__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
 
 /* --------------------------------------------------------------------------
    7. Footer
@@ -874,6 +997,7 @@ a.more__link:hover::after { transform: translateX(3px); color: var(--accent); }
   .case--reverse .case__visual { order: 0; }
   .principles { grid-template-columns: 1fr; }
   .more { grid-template-columns: 1fr; }
+  .resume__competencies > div { grid-template-columns: 1fr; gap: 0.1rem; }
 }
 
 @media (max-width: 720px) {
@@ -905,6 +1029,9 @@ a.more__link:hover::after { transform: translateX(3px); color: var(--accent); }
   .domains__list li:nth-child(2) { border-top: 1px solid var(--border); padding-top: 0.5rem; }
   .hero__visual { max-width: 280px; }
   .hero__actions .button { flex: 1 1 auto; justify-content: center; }
+  .lab-card { grid-template-columns: 1fr; }
+  .lab-card__logo img { max-width: 240px; }
+  .resume__dates { white-space: normal; }
 }
 
 /* --------------------------------------------------------------------------
