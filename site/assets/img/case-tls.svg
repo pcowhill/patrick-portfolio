@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#7f8b98"/>
+    </marker>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#2a3440" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="420" fill="#1b2129"/>
+  <rect width="640" height="420" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Input queue -->
+  <g>
+    <rect x="36" y="150" width="120" height="120" rx="10" fill="#242d38" stroke="#3f4b5a"/>
+    <g fill="#7f8b98">
+      <rect x="52" y="168" width="88" height="8" rx="2"/>
+      <rect x="52" y="184" width="76" height="8" rx="2"/>
+      <rect x="52" y="200" width="88" height="8" rx="2"/>
+      <rect x="52" y="216" width="64" height="8" rx="2"/>
+      <rect x="52" y="232" width="82" height="8" rx="2"/>
+    </g>
+    <text x="96" y="296" text-anchor="middle" fill="#a3adb8" font-size="12">&gt; 1,000,000 hosts</text>
+    <text x="96" y="140" text-anchor="middle" fill="#e6e9ed" font-size="13" font-weight="600">site list</text>
+  </g>
+
+  <path d="M156 210H208" stroke="#7f8b98" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Parallel probes -->
+  <g>
+    <text x="300" y="98" text-anchor="middle" fill="#e6e9ed" font-size="13" font-weight="600">parallel TLS probes</text>
+    <g stroke="#3f4b5a" fill="#242d38">
+      <rect x="220" y="112" width="160" height="40" rx="8"/>
+      <rect x="220" y="160" width="160" height="40" rx="8"/>
+      <rect x="220" y="208" width="160" height="40" rx="8"/>
+      <rect x="220" y="256" width="160" height="40" rx="8"/>
+    </g>
+    <g fill="#a3adb8" font-size="11">
+      <text x="236" y="137">TLS handshake</text>
+      <text x="236" y="185">certificate</text>
+      <text x="236" y="233">protocol version</text>
+      <text x="236" y="281">error · timeout</text>
+    </g>
+    <g fill="#3fae78">
+      <circle cx="366" cy="132" r="4"/>
+      <circle cx="366" cy="180" r="4"/>
+      <circle cx="366" cy="228" r="4"/>
+      <circle cx="366" cy="276" r="4" fill="#7f8b98"/>
+    </g>
+    <path d="M208 210 L220 132 M208 210 L220 180 M208 210 L220 228 M208 210 L220 276" stroke="#3f4b5a" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <path d="M380 132 L420 204 M380 180 L420 204 M380 228 L420 204 M380 276 L420 204" stroke="#3f4b5a" stroke-width="1.2" fill="none"/>
+  <path d="M420 204H448" stroke="#7f8b98" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Results + analysis -->
+  <g>
+    <rect x="452" y="118" width="152" height="176" rx="10" fill="#242d38" stroke="#3f4b5a"/>
+    <text x="528" y="106" text-anchor="middle" fill="#e6e9ed" font-size="13" font-weight="600">results → analysis</text>
+    <g fill="#3fae78">
+      <rect x="472" y="238" width="18" height="36" rx="2"/>
+      <rect x="496" y="206" width="18" height="68" rx="2"/>
+      <rect x="520" y="182" width="18" height="92" rx="2"/>
+      <rect x="544" y="160" width="18" height="114" rx="2" opacity="0.9"/>
+      <rect x="568" y="148" width="18" height="126" rx="2" opacity="0.8"/>
+    </g>
+    <path d="M466 274H592" stroke="#7f8b98" stroke-width="1"/>
+    <text x="528" y="140" text-anchor="middle" fill="#a3adb8" font-size="11">adoption · configuration</text>
+  </g>
+
+  <text x="320" y="372" text-anchor="middle" fill="#7f8b98" font-size="11">scripted collection at scale → cleaned data → interpretation → written report</text>
+</svg>
